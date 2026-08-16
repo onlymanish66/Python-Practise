@@ -26,7 +26,7 @@ class BST:
         return self.rsearch(self.root,data)
 
     def rsearch(self,root,data):
-        if root is None or root.item == None:
+        if root is None or root.item == data:
             return root
         if data<root.item:
             return self.rsearch(root.left,data)
