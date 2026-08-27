@@ -1,6 +1,13 @@
-def reverseArray(a):
-    reverse_arr = []
-    for i in a:
-        reverse_arr.insert(0,i)
-    return reverse_arr
+def reverseArray(arr):
+    left = 0
+    right = len(arr)-1
+    while left<right:
+        arr[left],arr[right]=arr[right],arr[left]
+        left+=1
+        right-=1
+    return arr
+
+arr = [1,2,3,4,5,6]
+res = reverseArray(arr)
+print(res)
     
