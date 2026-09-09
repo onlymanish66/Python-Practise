@@ -1,12 +1,18 @@
-def check_prime(num):
-    if num <2:
+def is_prime(n):
+    if n < 2:
         return False
-    i = 2
-    while i*i <=num:
-        if num%i==0:
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
             return False
-        i+=1
+
     return True
 
-num = 17
-print(check_prime(num))
+
+n = int(input("Enter a number: "))
+
+if is_prime(n):
+    print("Prime")
+else:
+    print("Not Prime")
+is_prime(11)
