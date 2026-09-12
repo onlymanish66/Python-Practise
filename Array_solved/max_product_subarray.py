@@ -10,3 +10,6 @@ def max_product_subarray(nums):
         cur_min = min(num,cur_min*num)
         max_prod = max(cur_max,max_prod)
     return max_prod
+
+nums = [3,2,-2,3,1]
+print(max_product_subarray(nums))
