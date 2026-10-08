@@ -1,4 +1,4 @@
-def Max_sum_subarray(nums):
+def Max_sum_subarray(nums): #kadane's algorithm
     current_sum = nums[0]
     max_sum = nums[0]
     for i in range (1,len(nums)):

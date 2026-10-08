@@ -5,8 +5,7 @@ def union_arr(arr1,arr2):
             res.append(i)
     for j in arr2:
         if j not in res:
-            if j not in res:
-                res.append(j)
+            res.append(j)
 
     return res
 

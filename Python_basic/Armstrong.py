@@ -1,12 +1,7 @@
-def Armstrong(num):
+def Armstrong(num:int)->bool:
     temp = num
-    length = 0
     sum = 0
-    while temp > 0:
-        length+=1
-        temp //=10
-
-    temp = num
+    length=len(str(num))
     while temp >0:
         digit = temp %10
         sum = sum + (digit**length)
