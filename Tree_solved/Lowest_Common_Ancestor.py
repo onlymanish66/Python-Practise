@@ -6,7 +6,7 @@ def Lowest_Common_Ancestor(root,p,q):
     right = Lowest_Common_Ancestor(root.right,p,q)
 
     if left and right:
-        return root     # root == Ancestor ,here we return
+        return root     # root == Ancestor ,that we return
     if left == None:   
         return right   
     else:
